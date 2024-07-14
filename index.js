@@ -4,8 +4,8 @@ const RAM = require('random-access-memory')
 const debug = require('debug')('redis-like-db');
 
 class RediLocal {
-    constructor() {
-        this.core = new Hypercore(RAM)
+    constructor(usingRAM = false) {
+        this.core = usingRAM ? new Hypercore(RAM) : new Hypercore('.db_redilocal')
         this.db = new Hyperbee(this.core, { keyEncoding: 'utf-8', valueEncoding: 'binary' })
     }
 

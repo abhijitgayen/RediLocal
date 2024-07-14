@@ -4,7 +4,7 @@ describe('RediLocal', () => {
   let redisLikeDB;
 
   beforeEach(() => {
-    redisLikeDB = new RediLocal();
+    redisLikeDB = new RediLocal(true);
   });
 
   afterEach(async () => {
