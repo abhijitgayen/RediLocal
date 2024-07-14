@@ -1,0 +1,11 @@
+__tests__/
+.vscode/
+.idea/
+.git/
+.gitignore
+jest.config.js
+babel.config.js
+package-lock.json
+yarn.lock
+*.log
+.DS_Store

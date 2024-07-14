@@ -1,0 +1,22 @@
+{
+  "name": "redilocal",
+  "version": "1.0.0",
+  "description": "A local redis in js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Abhijit Gayen <agayen04@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.5",
+    "hyperbee": "^2.19.7",
+    "hypercore": "^10.37.10",
+    "install": "^0.13.0",
+    "npm": "^10.8.2",
+    "random-access-memory": "^6.2.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
