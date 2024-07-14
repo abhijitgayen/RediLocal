@@ -24,7 +24,7 @@ Initialize a new instance of `RediLocal`:
 const RediLocal = require('redilocal');
 const redisLikeDB = new RediLocal();
 ```
-if you want to use RAM for good performance. You can use like that.
+If you want to use RAM for good performance. You can use like that.
 
 ```javascript
 const RediLocal = require('redilocal');

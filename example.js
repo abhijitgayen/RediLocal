@@ -1,7 +1,7 @@
 const RediLocal = require('./index'); // Adjust the path as per your project structure
 
 (async () => {
-  const redisLikeDB = new RediLocal();
+  const redisLikeDB = new RediLocal(false);
 
   // Set values
   await redisLikeDB.set('key1', JSON.stringify({ name: 'Alice', age: 30 }));
@@ -9,7 +9,7 @@ const RediLocal = require('./index'); // Adjust the path as per your project str
   await redisLikeDB.set('key3', JSON.stringify({ name: 'Charlie', age: 35 }));
 
   // Get values
-  console.log(await redisLikeDB.get('key1')); // Output: { status: true, val: { name: 'Alice', age: 30 } }
+  console.log(await redisLikeDB.get('key1')); // Output:  { name: 'Alice', age: 30 }
 
   // Delete a key
   await redisLikeDB.del('key2');
@@ -46,4 +46,5 @@ const RediLocal = require('./index'); // Adjust the path as per your project str
   const searchResults = await redisLikeDB.searchEntry('entry1', 10); // Search for keys starting with 'entry'
   console.log('Search results:', searchResults);
 
+  await redisLikeDB.flushall()
 })();
