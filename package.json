@@ -1,6 +1,6 @@
 {
   "name": "redilocal",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A local redis in js",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,17 @@
   },
   "devDependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhijitgayen/RediLocal.git"
+  },
+  "keywords": [
+    "local",
+    "db"
+  ],
+  "bugs": {
+    "url": "https://github.com/abhijitgayen/RediLocal/issues"
+  },
+  "homepage": "https://github.com/abhijitgayen/RediLocal#readme"
 }
