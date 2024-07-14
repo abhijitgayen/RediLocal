@@ -1,7 +1,7 @@
 const Hyperbee = require('hyperbee')
 const Hypercore = require('hypercore')
 const RAM = require('random-access-memory')
-const debug = require('debug')('redis-like-db');
+const debug = require('debug')('redilocal');
 
 class RediLocal {
     constructor(usingRAM = false) {
