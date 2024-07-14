@@ -113,4 +113,4 @@ const searchResults = await redisLikeDB.searchEntry('entry', 10);
 console.log(searchResults);
 ```
 
-**> Noted : All credit goes to the Holepunch teams.**
+**Noted : All credit goes to the Holepunch teams.**
